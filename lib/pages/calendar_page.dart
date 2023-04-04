@@ -45,7 +45,7 @@ class _CalendarPageState extends State<CalendarPage> {
   }
 
   String _formatDateTime(DateTime dateTime) {
-    return DateFormat('MM/dd/yyyy hh:mm:ss').format(dateTime);
+    return DateFormat('EEEE MM/dd/yyyy hh:mm:ss').format(dateTime);
   }
 
   @override
@@ -58,7 +58,7 @@ class _CalendarPageState extends State<CalendarPage> {
         children: [
           Row(
             children: [
-              Text(_timeString, style: Theme.of(context).textTheme.headline4),
+              Text(_timeString, style: Theme.of(context).textTheme.bodyMedium),
               SizedBox(width: 10),
               ElevatedButton(
                   onPressed: () {
